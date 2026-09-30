@@ -16,8 +16,8 @@ const ModalProjectCard = () => {
   const { isVisible, toggleModal } = useModal();
 
   useEffect(() => {
-    toggleModal();
-  }, []);
+  toggleModal();
+  }, [toggleModal]);
 
   return (
     <Modal show={isVisible} onClose={toggleModal}>
